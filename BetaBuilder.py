@@ -12,12 +12,12 @@ moveAccs = []
 moveTypes = []
 learnsets = []
 
-with open(os.getcwd() + '\\resources\\learnsets.tsv') as tsvfile:
+with open(os.getcwd() + '/resources/learnsets.tsv') as tsvfile:
     reader = csv.reader(tsvfile, delimiter='\t')
     for row in reader:
         learnsets.append(row[1:len(row)])
 
-with open(os.getcwd() + '\\resources\\moves.tsv') as tsvfile:
+with open(os.getcwd() + '/resources/moves.tsv') as tsvfile:
     reader = csv.reader(tsvfile, delimiter='\t')
     for row in reader:
         moveNames.append(row[1])
@@ -68,7 +68,7 @@ for i in range(len(moveTypes)):
 ## BREAK
 ## silvally is default to only normal type
 
-with open(os.getcwd() + '\\resources\\pokemon.json') as f:
+with open(os.getcwd() + '/resources/pokemon.json') as f:
     data = json.load(f)
 
 names = []
